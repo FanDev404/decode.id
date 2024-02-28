@@ -12,9 +12,9 @@ module.exports = async (server = "", metadata = { application_key: "", id: 1 }, 
     }
     switch (options?.version) {
         case "v1":
-            return await deleteUsersV1(server.trim(), metadata).then(({ status, data, message }) => {
+            return await deleteUsersV1(server.trim(), metadata).then(({ status, message }) => {
                 if (status) {
-                    results.data = data
+                    results.message = message
                     results.status = true
                 } else {
                     results.message = message
