@@ -16,6 +16,7 @@ module.exports = async (server = "", metadata = { application_key: "" }, options
                 if (status) {
                     results.data = data
                     results.status = true
+                    results.message = message
                 } else {
                     results.message = message
                 }
