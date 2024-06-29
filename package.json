@@ -1,0 +1,35 @@
+{
+  "name": "decode.id",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FanDev404/decode-family"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://wa.me/6289674310267"
+  },
+  "homepage": "https://dl.onxs.eu.org",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "~1.0.0-rc.5", 
+    "crypto": "^1.0.1",
+    "file-type": "^16.5.4", 
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "0.0.1-security",
+    "got": "^11.8.3", 
+    "moment-timezone": "^0.5.34",
+    "node-fetch": "^3.2.0",
+    "node-webpmux": "^3.1.0", 
+    "os": "^0.1.1", 
+    "spotifydl-core": "latest",
+    "ytdl-core": "latest"
+  }
+}
