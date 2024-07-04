@@ -1,5 +1,5 @@
 const { createServersV1 } = require("../../../lib/scrapper-pterodactyl.js") 
-module.exports = async (server = "", metadata = { application_key: "", id: 1, name: "", password: "", email: "", isAdmins: false, egg: 15, locations: 1, create: "1GB" }, options = { version: "v1" }) => {
+module.exports = async (server = "", metadata = { application_key: "", id: 1, username: "", first_name: "", last_name: "", password: "", email: "", isAdmins: false, egg: 15, locations: 1, create: "1GB" }, options = { version: "v1" }) => {
     const results = { 
         "creator": "https://wa.me/6289674310267", 
         "status": false, 
