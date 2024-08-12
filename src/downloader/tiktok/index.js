@@ -12,7 +12,7 @@ module.exports = async (url = "", options = { version: "v1" }) => {
         results.message = "Link Url not valid"
         return results
     }
-    if (!Object.keys(options).includes("version") || options?.version !== "v1" && options?.version !== "v2" && options?.version !== "v3" && options?.version !== "v4") {
+    if (!Object.keys(options).includes("version") || options?.version !== "v1") {
         results.message = "version not valid"
         return results
     }
@@ -27,32 +27,6 @@ module.exports = async (url = "", options = { version: "v1" }) => {
                 }
                 return results
             })
-        break
-        case "v2":
-            return await tiktokDLV2(url.trim()).then(async ({ status, data, message }) => {
-                if (status) {
-                    results.data = data
-                    results.status = true
-                } else {
-                    results.message = message
-                }
-                return results
-            }) 
-        break
-        case "v3":
-            results.message = "Maitance....."
-            return results
-        break
-        case "v4":
-            return await tiktokDLV4(url.trim()).then(async ({ status, data, message }) => {
-                if (status) {
-                    results.data = data
-                    results.status = true
-                } else {
-                    results.message = message
-                }
-                return results
-            }) 
         break
         default: 
         if (results.message == "") {
