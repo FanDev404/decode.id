@@ -1,4 +1,4 @@
-const { tiktokDLV1, tiktokDLV2, tiktokDLV3, tiktokDLV4 } = require("../../../lib/scrapper-download.js") 
+const { tiktokDLV1 } = require("../../../lib/scrapper-download.js") 
 const { fetchBuffer } = require("../../../lib/function.js") 
 module.exports = async (url = "", options = { version: "v1" }) => {
     const image = []
