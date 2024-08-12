@@ -8,7 +8,7 @@ module.exports = async (url = "", options = { version: "v1" }) => {
         "data": [], 
         "message": ""
     }
-    if (!url.trim().startsWith("https://www.instagram.com/reel/") && !url.trim().startsWith("https://www.instagram.com/p/") && !url.trim().startsWith("https://www.instagram.com/tv/") || url.trim().startsWith("https://www.instagram.com/reel/") && url.trim().split("/reel/")[1] == "" || url.trim().startsWith("https://www.instagram.com/p/") && url.trim().split("/p/")[1] == "" || url.trim().startsWith("https://www.instagram.com/tv/") && url.trim().split("/tv/")[1] == "") {
+    if (!url.trim().startsWith("https://www.instagram.com/") && !url.trim().includes("/reel/") && !url.trim().includes("/tv/") && !url.trim().includes("/p/")) {
         results.message = "Link Url not valid"
         return results
     }
