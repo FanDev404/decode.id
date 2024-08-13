@@ -23,6 +23,7 @@
     "axios": "^0.27.2",
     "cheerio": "~1.0.0-rc.5", 
     "crypto": "^1.0.1",
+    "downlib": "latest",
     "file-type": "^16.5.4", 
     "fluent-ffmpeg": "^2.1.2",
     "fs": "0.0.1-security",
@@ -32,7 +33,6 @@
     "node-webpmux": "^3.1.0", 
     "os": "^0.1.1", 
     "spotifydl-core": "latest", 
-    "ytdl-core": "latest", 
     "yt-search": "latest"
   }
 }
