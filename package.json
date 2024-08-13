@@ -21,7 +21,7 @@
     "@google/generative-ai": "latest", 
     "@tobyg74/tiktok-api-dl": "latest",
     "axios": "^0.27.2",
-    "cheerio": "~1.0.0-rc.5", 
+    "cheerio": "^1.0.0-rc.12",
     "crypto": "^1.0.1",
     "file-type": "^16.5.4", 
     "fluent-ffmpeg": "^2.1.2",
