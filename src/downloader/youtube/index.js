@@ -1,5 +1,5 @@
 const { youtubeDLV1, youtubeDLV2 } = require("../../../lib/scrapper-download.js") 
-module.exports = async (url = "", options = { version: "v1" }) => {
+module.exports = async (url = "", format, options = { version: "v1" }) => {
     const results = { 
         "creator": "https://wa.me/6289674310267", 
         "status": false, 
@@ -27,7 +27,7 @@ module.exports = async (url = "", options = { version: "v1" }) => {
             }) 
         break
         case "v2":
-            return await youtubeDLV2(url.trim()).then(({ status, data, message }) => {
+            return await youtubeDLV2(url.trim(), format).then(({ status, data, message }) => {
                 if (status) {
                     results.data = data
                     results.status = true
